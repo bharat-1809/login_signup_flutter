@@ -5,7 +5,7 @@ final kBrightGreenColor = Color(0xff1bcd90);
 
 final kBorderRadius = BorderRadius.circular(7);
 
-final kShadowColor = Colors.grey.withOpacity(0.2);
+final kShadowColor = Color(0xff1bcd90).withOpacity(0.5);
 
 final kInputBorderStyle = OutlineInputBorder(
   borderRadius: kBorderRadius,
@@ -23,12 +23,28 @@ final kInputDecoration = InputDecoration(
   contentPadding: EdgeInsets.symmetric(horizontal: 22, vertical: 17),
 );
 
-final kFormFieldStyle = GoogleFonts.montserrat(fontSize: 15, color: Colors.grey[700]);
+final kFormFieldStyle = GoogleFonts.openSans(
+  fontSize: 14.5,
+  color: Colors.grey[600],
+  fontWeight: FontWeight.w500,
+);
 
-final kHeadingtextStyle = GoogleFonts.openSans(
-  fontSize: 33,
+final kHeadingtextStyle = GoogleFonts.roboto(
+  fontSize: 35,
   fontWeight: FontWeight.bold,
-  color: Colors.black87,
+  color: Colors.black87.withOpacity(0.75),
+);
+
+final kLoginButtonTextStyle = GoogleFonts.openSans(
+  color: Colors.white,
+  fontSize: 12,
+  fontWeight: FontWeight.w600,
+);
+
+final kForgotPasswordTextStyle = GoogleFonts.openSans(
+  color: kBrightGreenColor,
+  fontWeight: FontWeight.w700,
+  fontSize: 12.5,
 );
 
 final kLogoSize = 100.0;
