@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:login_signup/components/socialButton.dart';
 import 'package:login_signup/components/textFormField.dart';
 import 'package:login_signup/constants.dart';
 
@@ -97,12 +98,57 @@ class _LoginFormState extends State<LoginForm> {
             SizedBox(height: 40),
             Text(
               'or connect with',
-              style: GoogleFonts.openSans(
-                color: Colors.grey,
-                fontSize: 12,
-                letterSpacing: 0.5,
-              ),
-            )
+              style: kSocialConnectTextStyle,
+            ),
+            SizedBox(height: 20),
+            Wrap(
+              spacing: 17.0,
+              runSpacing: 17,
+              alignment: WrapAlignment.center,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                SocialConnectButton(
+                  onPressed: () {},
+                  icon: 'assets/mail.png',
+                ),
+                SocialConnectButton(
+                  onPressed: () {},
+                  icon: 'assets/mail.png',
+                ),
+                SocialConnectButton(
+                  onPressed: () {},
+                  icon: 'assets/mail.png',
+                ),
+                SocialConnectButton(
+                  onPressed: () {},
+                  icon: 'assets/mail.png',
+                ),
+                SocialConnectButton(
+                  onPressed: () {},
+                  icon: 'assets/mail.png',
+                ),
+              ],
+            ),
+            SizedBox(height: 40),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Don't have an account?",
+                  style: kDontHaveAccountTextStyle,
+                ),
+                SizedBox(width: 20),
+                GestureDetector(
+                  onTap: () {
+                    //TODO Implement SignUp functionality
+                  },
+                  child: Text(
+                    'SIGN UP',
+                    style: kSignUpTextStyle,
+                  ),
+                )
+              ],
+            ),
           ],
         ),
       ),
@@ -119,12 +165,20 @@ class ForgotPasswordWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final _snackBar = SnackBar(
+      content: Text(
+        "This feature isn't available yet. Please wait for the developers to cook this recipie",
+        style: kSignUpTextStyle,
+      ),
+      elevation: 10.0,
+      shape: RoundedRectangleBorder(borderRadius: kBorderRadius),
+    );
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         GestureDetector(
           onTap: () {
-            //TODO Implement Forgot Password functionality
+            Scaffold.of(context).showSnackBar(_snackBar);
           },
           child: Text(
             'FORGOT PASWORD?',

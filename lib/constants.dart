@@ -47,4 +47,21 @@ final kForgotPasswordTextStyle = GoogleFonts.openSans(
   fontSize: 12.5,
 );
 
+final kSocialConnectTextStyle = GoogleFonts.openSans(
+  color: Colors.grey,
+  fontSize: 13,
+);
+
+final kDontHaveAccountTextStyle = GoogleFonts.openSans(
+  color: Colors.grey[700],
+  fontSize: 13,
+  fontWeight: FontWeight.w500,
+);
+
+final kSignUpTextStyle = GoogleFonts.openSans(
+  color: kBrightGreenColor,
+  fontSize: 13,
+  fontWeight: FontWeight.w600,
+);
+
 final kLogoSize = 100.0;
