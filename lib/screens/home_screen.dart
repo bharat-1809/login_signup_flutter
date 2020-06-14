@@ -12,18 +12,14 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Container(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SizedBox(height: 30),
-                TopSection(),
-                SizedBox(height: 50),
-                LoginForm(),
-              ],
-            ),
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(height: 30),
+            TopSection(),
+            SizedBox(height: 50),
+            LoginForm(),
+          ],
         ),
       ),
     );
@@ -40,21 +36,18 @@ class TopSection extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Container(
-              height: 100,
-              width: 100,
+              height: kLogoSize,
+              width: kLogoSize,
               child: Image.asset(
                 'assets/login.png',
                 fit: BoxFit.contain,
+                colorBlendMode: BlendMode.lighten,
               ),
             ),
             SizedBox(height: 30),
             Text(
               "Login Flow",
-              style: GoogleFonts.openSans(
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-                color: Colors.black87,
-              ),
+              style: kHeadingtextStyle,
             ),
           ],
         ),
@@ -69,8 +62,28 @@ class LoginForm extends StatefulWidget {
 }
 
 class _LoginFormState extends State<LoginForm> {
-  final emailController = TextEditingController();
-  final passwordController = TextEditingController();
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  String _email;
+  String _password;
+
+  String _validateEmail(String email) {
+    if (email.isEmpty) {
+      return 'Email cannot be empty';
+    } else if (!email.contains('@')) {
+      return 'Enter a valid email';
+    } else {
+      return null;
+    }
+  }
+
+  String _validatePassword(String password) {
+    if (password.length < 6) {
+      return 'Password must contain atleast 6 characters';
+    } else
+      return null;
+  }
 
   Widget buildTextFields(
       {TextEditingController fieldController,
@@ -81,23 +94,28 @@ class _LoginFormState extends State<LoginForm> {
       Function validator,
       Function onChanged}) {
     return Container(
-      child: TextFormField(
-        controller: fieldController,
-        cursorColor: Colors.green,
-        keyboardType: keyboardType,
-        obscureText: obscureText ?? false,
-        validator: validator,
-        onChanged: onChanged,
-        textAlignVertical: TextAlignVertical.center,
-        style: kFormFieldStyle,
-        decoration: kInputDecoration.copyWith(
-          hintText: hintText,
-          prefix: Padding(
-            padding: EdgeInsets.only(right: 15),
-            child: Image.asset(
-              prefixImage,
-              height: 25,
-              width: 25,
+      child: Material(
+        borderRadius: kBorderRadius,
+        elevation: 2,
+        shadowColor: kShadowColor,
+        child: TextFormField(
+          controller: fieldController,
+          cursorColor: kBrightGreenColor,
+          keyboardType: keyboardType,
+          obscureText: obscureText ?? false,
+          validator: validator,
+          onChanged: onChanged,
+          textAlignVertical: TextAlignVertical.center,
+          style: kFormFieldStyle,
+          decoration: kInputDecoration.copyWith(
+            hintText: hintText,
+            prefixIcon: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 15),
+              child: Image.asset(
+                prefixImage,
+                height: 22.5,
+                width: 22.5,
+              ),
             ),
           ),
         ),
@@ -109,25 +127,50 @@ class _LoginFormState extends State<LoginForm> {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width * 0.8,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          buildTextFields(
-            fieldController: emailController,
-            hintText: 'Email',
-            prefixImage: 'assets/mail.png',
-            keyboardType: TextInputType.emailAddress,
-          ),
-          SizedBox(height: 20),
-          buildTextFields(
-            fieldController: passwordController,
-            hintText: 'Password',
-            prefixImage: 'assets/lock.png',
-            obscureText: true,
-            keyboardType: TextInputType.visiblePassword,
-          ),
-        ],
+      child: Form(
+        key: _formKey,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            buildTextFields(
+              fieldController: _emailController,
+              hintText: 'Email',
+              prefixImage: 'assets/mail.png',
+              keyboardType: TextInputType.emailAddress,
+              validator: _validateEmail,
+            ),
+            SizedBox(height: 10),
+            buildTextFields(
+              fieldController: _passwordController,
+              hintText: 'Password',
+              prefixImage: 'assets/lock.png',
+              obscureText: true,
+              keyboardType: TextInputType.visiblePassword,
+              validator: _validatePassword,
+            ),
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    print('tapped');
+                  },
+                  child: Text(
+                    'FORGOT PASWORD?',
+                    style: GoogleFonts.openSans(
+                      color: kBrightGreenColor,
+                      // color: Colors.green,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 13.6,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
