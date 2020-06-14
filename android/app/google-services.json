@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "464932602079",
+    "firebase_url": "https://logsup-1809.firebaseio.com",
+    "project_id": "logsup-1809",
+    "storage_bucket": "logsup-1809.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464932602079:android:32f040b4330fb4eab2696a",
+        "android_client_info": {
+          "package_name": "dot.studios.login_signup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464932602079-bb7fjdv04r9e902qfc55reosjhdcn5fc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dot.studios.login_signup",
+            "certificate_hash": "7313b6787a58fa26cc101b2ac1241fdb60e89b4f"
+          }
+        },
+        {
+          "client_id": "464932602079-bqo4svip74300egvrq3bb4vul5dd7jdp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3-yirsYno-eO9AruGYanfdw99NLa6HTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464932602079-bqo4svip74300egvrq3bb4vul5dd7jdp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

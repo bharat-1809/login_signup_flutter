@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               SizedBox(height: 60),
               TopSection(),
-              SizedBox(height: 50),
+              SizedBox(height: 80),
               LoginForm(),
             ],
           ),
