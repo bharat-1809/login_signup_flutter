@@ -1,9 +1,11 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:login_signup/components/customRaisedButton.dart';
 import 'package:login_signup/components/socialButton.dart';
 import 'package:login_signup/components/textFormField.dart';
 import 'package:login_signup/constants.dart';
 import 'package:login_signup/screens/secondScreen.dart';
+import 'package:login_signup/services/loginServices.dart';
 
 class LoginForm extends StatefulWidget {
   @override
@@ -14,6 +16,7 @@ class _LoginFormState extends State<LoginForm> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
+  final _loginProvider = LoginProvider();
   String _email;
   String _password;
 
@@ -72,14 +75,18 @@ class _LoginFormState extends State<LoginForm> {
             ForgotPasswordWidget(),
             SizedBox(height: 35),
             CustomRasiedButton(
-              onPressed: () {
+              onPressed: () async {
                 _formKey.currentState.save();
                 if (_formKey.currentState.validate()) {
                   //TODO Implement Login Functionality
-
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-                    return SecondScreen();
-                  }));
+                  final String _userId =
+                      await _loginProvider.signInWithEmailPass(email: _email, password: _password);
+                  final FirebaseUser _currentuser = await _loginProvider.getCurrentUser();
+                  if (_userId == _currentuser.uid) {
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                      return SecondScreen();
+                    }));
+                  }
                 }
               },
               title: 'LOG IN',

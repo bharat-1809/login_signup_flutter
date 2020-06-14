@@ -1,8 +1,35 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:login_signup/components/customRaisedButton.dart';
 import 'package:login_signup/constants.dart';
+import 'package:login_signup/services/loginServices.dart';
 
-class SecondScreen extends StatelessWidget {
+class SecondScreen extends StatefulWidget {
+  @override
+  _SecondScreenState createState() => _SecondScreenState();
+}
+
+class _SecondScreenState extends State<SecondScreen> {
+  String _email;
+  FirebaseUser _currentUser;
+  final _loginProvider = LoginProvider();
+
+  Future<FirebaseUser> updateUser() async {
+    _currentUser = await _loginProvider.getCurrentUser();
+    return _currentUser;
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    updateUser().then((value) {
+      setState(() {
+        _email = value.email;
+        _currentUser = value;
+      });
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,8 +44,9 @@ class SecondScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: Icon(Icons.all_out),
-            onPressed: () {
-              //TODO Implement logout functionality
+            onPressed: () async {
+              await _currentUser.delete();
+              Navigator.of(context).pop();
             },
           ),
         ],
@@ -30,7 +58,7 @@ class SecondScreen extends StatelessWidget {
             width: MediaQuery.of(context).size.width * 0.8,
             child: CustomRasiedButton(
               onPressed: () {},
-              title: 'WELCOME',
+              title: 'WELCOME $_email',
             ),
           ),
         ),
