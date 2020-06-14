@@ -12,18 +12,18 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(height: 30),
-            TopSection(),
-            SizedBox(height: 50),
-            LoginForm(),
-          ],
+        child: SingleChildScrollView(
+                  child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(height: 60),
+              TopSection(),
+              SizedBox(height: 50),
+              LoginForm(),
+            ],
+          ),
         ),
       ),
     );
   }
 }
-
-

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:login_signup/components/customRaisedButton.dart';
 import 'package:login_signup/components/socialButton.dart';
 import 'package:login_signup/components/textFormField.dart';
 import 'package:login_signup/constants.dart';
+import 'package:login_signup/screens/secondScreen.dart';
 
 class LoginForm extends StatefulWidget {
   @override
@@ -70,30 +71,18 @@ class _LoginFormState extends State<LoginForm> {
             SizedBox(height: 20),
             ForgotPasswordWidget(),
             SizedBox(height: 35),
-            Material(
-              elevation: 10.0,
-              shadowColor: kShadowColor,
-              borderRadius: kBorderRadius,
-              child: RaisedButton(
-                //TODO Implement shadow color
-                onPressed: () {
-                  _formKey.currentState.save();
-                  _formKey.currentState.validate();
+            CustomRasiedButton(
+              onPressed: () {
+                _formKey.currentState.save();
+                if (_formKey.currentState.validate()) {
                   //TODO Implement Login Functionality
-                },
-                shape: RoundedRectangleBorder(
-                  borderRadius: kBorderRadius,
-                ),
-                color: kBrightGreenColor,
-                elevation: 0.0,
-                padding: EdgeInsets.symmetric(vertical: 17),
-                child: Center(
-                  child: Text(
-                    'LOG IN',
-                    style: kLoginButtonTextStyle,
-                  ),
-                ),
-              ),
+
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                    return SecondScreen();
+                  }));
+                }
+              },
+              title: 'LOG IN',
             ),
             SizedBox(height: 40),
             Text(
@@ -109,23 +98,23 @@ class _LoginFormState extends State<LoginForm> {
               children: [
                 SocialConnectButton(
                   onPressed: () {},
-                  icon: 'assets/mail.png',
+                  icon: 'assets/facebook.png',
                 ),
                 SocialConnectButton(
                   onPressed: () {},
-                  icon: 'assets/mail.png',
+                  icon: 'assets/google.png',
                 ),
                 SocialConnectButton(
                   onPressed: () {},
-                  icon: 'assets/mail.png',
+                  icon: 'assets/twitter.png',
                 ),
                 SocialConnectButton(
                   onPressed: () {},
-                  icon: 'assets/mail.png',
+                  icon: 'assets/github.png',
                 ),
                 SocialConnectButton(
                   onPressed: () {},
-                  icon: 'assets/mail.png',
+                  icon: 'assets/microsoft.png',
                 ),
               ],
             ),

@@ -11,6 +11,7 @@ class SocialConnectButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final _width = MediaQuery.of(context).size.width;
     return Material(
+      color: Colors.transparent,
       elevation: 12.0,
       borderRadius: kBorderRadius,
       shadowColor: kShadowColor,
