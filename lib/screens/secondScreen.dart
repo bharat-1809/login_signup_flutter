@@ -45,7 +45,7 @@ class _SecondScreenState extends State<SecondScreen> {
           IconButton(
             icon: Icon(Icons.all_out),
             onPressed: () async {
-              await _currentUser.delete();
+              await FirebaseAuth.instance.signOut();
               Navigator.of(context).pop();
             },
           ),

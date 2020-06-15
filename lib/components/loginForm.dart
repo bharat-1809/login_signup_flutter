@@ -38,6 +38,13 @@ class _LoginFormState extends State<LoginForm> {
   }
 
   @override
+  void dispose() {
+    super.dispose();
+    _emailController.dispose();
+    _passwordController.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width * 0.8,
@@ -83,6 +90,8 @@ class _LoginFormState extends State<LoginForm> {
                       await _loginProvider.signInWithEmailPass(email: _email, password: _password);
                   final FirebaseUser _currentuser = await _loginProvider.getCurrentUser();
                   if (_userId == _currentuser.uid) {
+                    _emailController.clear();
+                    _passwordController.clear();
                     Navigator.of(context).push(MaterialPageRoute(builder: (context) {
                       return SecondScreen();
                     }));
@@ -137,6 +146,16 @@ class _LoginFormState extends State<LoginForm> {
                 GestureDetector(
                   onTap: () {
                     //TODO Implement SignUp functionality
+                    final _snackBar = SnackBar(
+                      content: Text(
+                        'This recipie is not yet cooked by the developer. Use "test@dotstudios.com" as email and "test1234" as password.',
+                        style: kSignUpTextStyle,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: kBorderRadius,
+                      ),
+                    );
+                    Scaffold.of(context).showSnackBar(_snackBar);
                   },
                   child: Text(
                     'SIGN UP',
