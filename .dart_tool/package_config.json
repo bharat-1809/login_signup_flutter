@@ -128,6 +128,24 @@
       "languageVersion": "2.3"
     },
     {
+      "name": "google_sign_in",
+      "rootUri": "file:///home/sifrant/development/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-4.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "google_sign_in_platform_interface",
+      "rootUri": "file:///home/sifrant/development/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_platform_interface-1.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "google_sign_in_web",
+      "rootUri": "file:///home/sifrant/development/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_web-0.9.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.6"
+    },
+    {
       "name": "http",
       "rootUri": "file:///home/sifrant/development/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.1",
       "packageUri": "lib/",
@@ -290,7 +308,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-06-14T21:18:32.009179Z",
+  "generated": "2020-06-15T07:26:02.043368Z",
   "generator": "pub",
   "generatorVersion": "2.9.0-7.0.dev.flutter-092ed38a87"
 }

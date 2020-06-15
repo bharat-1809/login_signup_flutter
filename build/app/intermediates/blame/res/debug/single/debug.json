@@ -72,6 +72,10 @@
         "source": "/home/sifrant/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
+        "merged": "/home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/app/intermediates/res/merged/debug/drawable-watch-v20_common_google_signin_btn_text_disabled.xml.flat",
+        "source": "/home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    },
+    {
         "merged": "/home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/app/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
         "source": "/home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
     },
@@ -100,6 +104,10 @@
         "source": "/home/sifrant/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/drawable/notification_bg_low.xml"
     },
     {
+        "merged": "/home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/app/intermediates/res/merged/debug/drawable-watch-v20_common_google_signin_btn_text_dark_normal.xml.flat",
+        "source": "/home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
         "merged": "/home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
         "source": "/home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     },
@@ -122,6 +130,10 @@
     {
         "merged": "/home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_standard_color_18.png.flat",
         "source": "/home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/res/drawable-hdpi-v4/googleg_standard_color_18.png"
+    },
+    {
+        "merged": "/home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/app/intermediates/res/merged/debug/drawable-watch-v20_common_google_signin_btn_text_light_normal.xml.flat",
+        "source": "/home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "/home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/app/intermediates/res/merged/debug/layout-v21_notification_template_custom_big.xml.flat",

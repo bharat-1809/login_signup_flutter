@@ -236,20 +236,43 @@
 141-->[com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
 142
 143        <activity
-143-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-144            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-144-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
-145            android:exported="false"
-145-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-146            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-146-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
-147
-148        <meta-data
-148-->[com.google.android.gms:play-services-basement:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/63e3fcc1572ce4b061750a99c390b54d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-149            android:name="com.google.android.gms.version"
-149-->[com.google.android.gms:play-services-basement:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/63e3fcc1572ce4b061750a99c390b54d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-150            android:value="@integer/google_play_services_version" />
-150-->[com.google.android.gms:play-services-basement:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/63e3fcc1572ce4b061750a99c390b54d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-151    </application>
-152
-153</manifest>
+143-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+144            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+144-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+145            android:excludeFromRecents="true"
+145-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+146            android:exported="false"
+146-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+147            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+147-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+148        <!--
+149            Service handling Google Sign-In user revocation. For apps that do not integrate with
+150            Google Sign-In, this service will never be started.
+151        -->
+152        <service
+152-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+153            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+153-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+154            android:exported="true"
+154-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+155            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+155-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+156
+157        <activity
+157-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+158            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+158-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+159            android:exported="false"
+159-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+160            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+160-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+161
+162        <meta-data
+162-->[com.google.android.gms:play-services-basement:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/63e3fcc1572ce4b061750a99c390b54d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+163            android:name="com.google.android.gms.version"
+163-->[com.google.android.gms:play-services-basement:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/63e3fcc1572ce4b061750a99c390b54d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+164            android:value="@integer/google_play_services_version" />
+164-->[com.google.android.gms:play-services-basement:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/63e3fcc1572ce4b061750a99c390b54d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+165    </application>
+166
+167</manifest>

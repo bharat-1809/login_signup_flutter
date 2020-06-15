@@ -117,7 +117,15 @@ class _LoginFormState extends State<LoginForm> {
                   icon: 'assets/facebook.png',
                 ),
                 SocialConnectButton(
-                  onPressed: () {},
+                  onPressed: () async {
+                    FirebaseUser _user = await _loginProvider.signInWithGoogle();
+                    FirebaseUser _currentUser = await _loginProvider.getCurrentUser();
+                    if (_user.uid == _currentUser.uid) {
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                      return SecondScreen();
+                    }));
+                    }
+                  },
                   icon: 'assets/google.png',
                 ),
                 SocialConnectButton(

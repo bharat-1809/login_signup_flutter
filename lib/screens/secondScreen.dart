@@ -10,7 +10,8 @@ class SecondScreen extends StatefulWidget {
 }
 
 class _SecondScreenState extends State<SecondScreen> {
-  String _email;
+  String _name;
+  String _photoUrl;
   FirebaseUser _currentUser;
   final _loginProvider = LoginProvider();
 
@@ -24,7 +25,8 @@ class _SecondScreenState extends State<SecondScreen> {
     super.initState();
     updateUser().then((value) {
       setState(() {
-        _email = value.email;
+        _name = value.displayName;
+        _photoUrl = value.photoUrl;
         _currentUser = value;
       });
     });
@@ -53,13 +55,23 @@ class _SecondScreenState extends State<SecondScreen> {
       ),
       body: Container(
         child: Center(
-          child: Container(
-            height: 100,
-            width: MediaQuery.of(context).size.width * 0.8,
-            child: CustomRasiedButton(
-              onPressed: () {},
-              title: 'WELCOME $_email',
-            ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CircleAvatar(
+                radius: 90,
+                backgroundImage: NetworkImage(_photoUrl),
+              ),
+              SizedBox(height: 50),
+              Container(
+                height: 100,
+                width: MediaQuery.of(context).size.width * 0.8,
+                child: CustomRasiedButton(
+                  onPressed: () {},
+                  title: 'WELCOME $_name',
+                ),
+              ),
+            ],
           ),
         ),
       ),

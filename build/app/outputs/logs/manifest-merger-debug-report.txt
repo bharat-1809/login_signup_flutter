@@ -7,6 +7,7 @@ INJECTED from /home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/
 MERGED from /home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:1:1-47:12
 MERGED from [:firebase_auth] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:path_provider] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:google_sign_in] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:firebase_core] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [com.google.firebase:firebase-analytics:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/2a70ee504bd32b1bd949b6dd58d86852/firebase-analytics-17.2.2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:17:1-42:12
@@ -16,10 +17,13 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.2] /home/
 MERGED from [com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:17:1-47:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/516d475c610d5ee0701cc5d0e0043980/firebase-auth-interop-19.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/160985c233e23f79bad9a37e22a7158f/play-services-measurement-impl-17.2.2/AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/141d94a470ee9666d17d69a1744b7285/play-services-measurement-sdk-api-17.2.2/AndroidManifest.xml:17:1-27:12
 MERGED from [com.google.android.gms:play-services-measurement-base:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/ee291fe42f7ab95bb28e88f1406e2eac/play-services-measurement-base-17.2.2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/646fcaf19234d7b37b884114aa567eb2/play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/8cb6751f0475248627525b194c74ebff/jetified-play-services-auth-api-phone-16.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/49fa8d379ef39e015b28eb51b8fa3e38/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/566477192cad9be9e53ff137fdc3eff4/firebase-iid-interop-17.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/187fb4c1c365ae32171bd8312a35992f/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
@@ -83,6 +87,8 @@ MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/sifrant/.gr
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/516d475c610d5ee0701cc5d0e0043980/firebase-auth-interop-19.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:25:5-37:19
 MERGED from [com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:22:5-37:19
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/160985c233e23f79bad9a37e22a7158f/play-services-measurement-impl-17.2.2/AndroidManifest.xml:28:5-38:19
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/160985c233e23f79bad9a37e22a7158f/play-services-measurement-impl-17.2.2/AndroidManifest.xml:28:5-38:19
 MERGED from [com.google.android.gms:play-services-measurement-base:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/ee291fe42f7ab95bb28e88f1406e2eac/play-services-measurement-base-17.2.2/AndroidManifest.xml:7:5-20
@@ -163,6 +169,8 @@ MERGED from [:firebase_auth] /home/sifrant/BHARAT/Github Projects/flutter/login_
 MERGED from [:firebase_auth] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:google_sign_in] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:google_sign_in] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/2a70ee504bd32b1bd949b6dd58d86852/firebase-analytics-17.2.2/AndroidManifest.xml:5:5-44
@@ -181,6 +189,8 @@ MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/sifrant/.gr
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/516d475c610d5ee0701cc5d0e0043980/firebase-auth-interop-19.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/160985c233e23f79bad9a37e22a7158f/play-services-measurement-impl-17.2.2/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/160985c233e23f79bad9a37e22a7158f/play-services-measurement-impl-17.2.2/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/141d94a470ee9666d17d69a1744b7285/play-services-measurement-sdk-api-17.2.2/AndroidManifest.xml:20:5-44
@@ -189,6 +199,10 @@ MERGED from [com.google.android.gms:play-services-measurement-base:17.2.2] /home
 MERGED from [com.google.android.gms:play-services-measurement-base:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/ee291fe42f7ab95bb28e88f1406e2eac/play-services-measurement-base-17.2.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/646fcaf19234d7b37b884114aa567eb2/play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/646fcaf19234d7b37b884114aa567eb2/play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/8cb6751f0475248627525b194c74ebff/jetified-play-services-auth-api-phone-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/8cb6751f0475248627525b194c74ebff/jetified-play-services-auth-api-phone-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/49fa8d379ef39e015b28eb51b8fa3e38/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/49fa8d379ef39e015b28eb51b8fa3e38/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/566477192cad9be9e53ff137fdc3eff4/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/566477192cad9be9e53ff137fdc3eff4/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:20:5-44
@@ -247,6 +261,8 @@ INJECTED from /home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/
 		INJECTED from /home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/debug/AndroidManifest.xml:6:5-66
+MERGED from [:google_sign_in] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
+MERGED from [:google_sign_in] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/ca912bff2260618b5b638fe661521702/play-services-measurement-api-17.2.2/AndroidManifest.xml:22:5-67
@@ -427,6 +443,24 @@ ADDED from [com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/ca
 		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
 	android:exported
