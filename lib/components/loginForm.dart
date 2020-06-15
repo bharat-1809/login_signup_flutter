@@ -113,7 +113,17 @@ class _LoginFormState extends State<LoginForm> {
               crossAxisAlignment: WrapCrossAlignment.center,
               children: [
                 SocialConnectButton(
-                  onPressed: () {},
+                  onPressed: () async {
+                    FirebaseUser _user = await _loginProvider.signInWithFacebook();
+                    FirebaseUser _currentUser = await _loginProvider.getCurrentUser();
+                    if (_user.uid == _currentUser.uid) {
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                        return SecondScreen();
+                      }));
+                    } else {
+                      print('Current user: ${_currentUser.email}');
+                    }
+                  },
                   icon: 'assets/facebook.png',
                 ),
                 SocialConnectButton(
@@ -122,8 +132,8 @@ class _LoginFormState extends State<LoginForm> {
                     FirebaseUser _currentUser = await _loginProvider.getCurrentUser();
                     if (_user.uid == _currentUser.uid) {
                       Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-                      return SecondScreen();
-                    }));
+                        return SecondScreen();
+                      }));
                     }
                   },
                   icon: 'assets/google.png',

@@ -110,6 +110,12 @@
       "languageVersion": "2.2"
     },
     {
+      "name": "flutter_facebook_login",
+      "rootUri": "file:///home/sifrant/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_facebook_login-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///home/sifrant/development/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -308,7 +314,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-06-15T07:26:02.043368Z",
+  "generated": "2020-06-15T14:58:27.434336Z",
   "generator": "pub",
   "generatorVersion": "2.9.0-7.0.dev.flutter-092ed38a87"
 }

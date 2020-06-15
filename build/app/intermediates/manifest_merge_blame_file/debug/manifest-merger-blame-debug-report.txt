@@ -5,15 +5,15 @@
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="16"
+8        android:minSdkVersion="21"
 9        android:targetSdkVersion="28" />
 10    <!--
 11         Flutter needs it to communicate with the running application
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/debug/AndroidManifest.xml:6:5-66
-14-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/debug/AndroidManifest.xml:6:22-64
+14-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:43:3-64
+14-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:43:20-62
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 15-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:24:5-79
 15-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:24:22-76
@@ -34,245 +34,340 @@
 24         FlutterApplication and put your custom class here.
 25    -->
 26    <application
-26-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:8:5-46:19
+26-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:7:3-41:17
 27        android:name="io.flutter.app.FlutterApplication"
-27-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:9:9-57
+27-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:7:16-64
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 28-->[androidx.core:core:1.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/AndroidManifest.xml:24:18-86
 29        android:debuggable="true"
 30        android:icon="@mipmap/ic_launcher"
-30-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:11:9-43
-31        android:label="login_signup" >
-31-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:10:9-37
-32        <activity
-32-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:12:9-40:20
-33            android:name="com.example.login_signup.MainActivity"
-33-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:13:13-41
-34            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-34-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:16:13-163
-35            android:hardwareAccelerated="true"
-35-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:17:13-47
-36            android:launchMode="singleTop"
-36-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:14:13-43
-37            android:theme="@style/LaunchTheme"
-37-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:15:13-47
-38            android:windowSoftInputMode="adjustResize" >
-38-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:18:13-55
-39
-40            <!--
-41                 Specifies an Android theme to apply to this Activity as soon as
-42                 the Android process has started. This theme is visible to the user
-43                 while the Flutter UI initializes. After that, this theme continues
-44                 to determine the Window background behind the Flutter UI.
-45            -->
-46            <meta-data
-46-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:23:13-26:17
-47                android:name="io.flutter.embedding.android.NormalTheme"
-47-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:24:15-70
-48                android:resource="@style/NormalTheme" />
-48-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:25:15-52
-49            <!--
-50                 Displays an Android View that continues showing the launch screen
-51                 Drawable until Flutter paints its first frame, then this splash
-52                 screen fades out. A splash screen is useful to avoid any visual
-53                 gap between the end of Android's launch screen and the painting of
-54                 Flutter's first frame.
-55            -->
-56            <meta-data
-56-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:32:13-35:17
-57                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-57-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:33:15-79
-58                android:resource="@drawable/launch_background" />
-58-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:34:15-61
-59
-60            <intent-filter>
-60-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:36:13-39:29
-61                <action android:name="android.intent.action.MAIN" />
-61-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:37:17-68
-61-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:37:25-66
-62
-63                <category android:name="android.intent.category.LAUNCHER" />
-63-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:38:17-76
-63-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:38:27-74
-64            </intent-filter>
-65        </activity>
-66        <!--
-67             Don't delete the meta-data below.
-68             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-69        -->
-70        <meta-data
-70-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:43:9-45:33
-71            android:name="flutterEmbedding"
-71-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:44:13-44
-72            android:value="2" />
-72-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:45:13-30
-73
-74        <service
-74-->[:firebase_auth] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-75            android:name="com.google.firebase.components.ComponentDiscoveryService"
-75-->[:firebase_auth] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
-76            android:directBootAware="true"
-76-->[com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
-77            android:exported="false" >
-77-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
-78            <meta-data
-78-->[:firebase_auth] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
-79                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
-79-->[:firebase_auth] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
-80                android:value="com.google.firebase.components.ComponentRegistrar" />
-80-->[:firebase_auth] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
-81            <meta-data
-81-->[:firebase_core] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
-82                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
-82-->[:firebase_core] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
-83                android:value="com.google.firebase.components.ComponentRegistrar" />
-83-->[:firebase_core] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
-84            <meta-data
-84-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
-85                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-85-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
-86                android:value="com.google.firebase.components.ComponentRegistrar" />
-86-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
-87            <meta-data
-87-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/ca912bff2260618b5b638fe661521702/play-services-measurement-api-17.2.2/AndroidManifest.xml:30:13-32:85
-88                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-88-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/ca912bff2260618b5b638fe661521702/play-services-measurement-api-17.2.2/AndroidManifest.xml:31:17-139
-89                android:value="com.google.firebase.components.ComponentRegistrar" />
-89-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/ca912bff2260618b5b638fe661521702/play-services-measurement-api-17.2.2/AndroidManifest.xml:32:17-82
-90            <meta-data
-90-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
-91                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-91-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
-92                android:value="com.google.firebase.components.ComponentRegistrar" />
-92-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
-93        </service>
-94
-95        <activity
-95-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
-96            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-96-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
-97            android:excludeFromRecents="true"
-97-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
-98            android:exported="true"
-98-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
-99            android:launchMode="singleTask"
-99-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
-100            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-100-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
-101            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-101-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
-102
-103        <receiver
-103-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:29:9-33:20
-104            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-104-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:30:13-85
-105            android:enabled="true"
-105-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:31:13-35
-106            android:exported="false" >
-106-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:32:13-37
-107        </receiver>
-108        <receiver
-108-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:34:9-42:20
-109            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-109-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:35:13-100
-110            android:enabled="true"
-110-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:36:13-35
-111            android:exported="true"
-111-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:37:13-36
-112            android:permission="android.permission.INSTALL_PACKAGES" >
-112-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:38:13-69
-113            <intent-filter>
-113-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:39:13-41:29
-114                <action android:name="com.android.vending.INSTALL_REFERRER" />
-114-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:40:17-79
-114-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:40:25-76
-115            </intent-filter>
-116        </receiver>
-117
-118        <service
-118-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:44:9-47:40
-119            android:name="com.google.android.gms.measurement.AppMeasurementService"
-119-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:45:13-84
-120            android:enabled="true"
-120-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:46:13-35
-121            android:exported="false" />
-121-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:47:13-37
-122        <service
-122-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:48:9-52:72
-123            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-123-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:49:13-87
-124            android:enabled="true"
-124-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:50:13-35
-125            android:exported="false"
-125-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:51:13-37
-126            android:permission="android.permission.BIND_JOB_SERVICE" />
-126-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:52:13-69
-127
-128        <receiver
-128-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
-129            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-129-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
-130            android:exported="true"
-130-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
-131            android:permission="com.google.android.c2dm.permission.SEND" >
-131-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
-132            <intent-filter>
-132-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
-133                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-133-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:42:17-81
-133-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:42:25-78
-134            </intent-filter>
-135        </receiver>
-136
-137        <provider
-137-->[com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
-138            android:name="com.google.firebase.provider.FirebaseInitProvider"
-138-->[com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-139            android:authorities="dot.studios.login_signup.firebaseinitprovider"
-139-->[com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
-140            android:exported="false"
-140-->[com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
-141            android:initOrder="100" />
-141-->[com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
-142
-143        <activity
-143-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
-144            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-144-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
-145            android:excludeFromRecents="true"
-145-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
-146            android:exported="false"
-146-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
-147            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-147-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
-148        <!--
-149            Service handling Google Sign-In user revocation. For apps that do not integrate with
-150            Google Sign-In, this service will never be started.
-151        -->
-152        <service
-152-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
-153            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-153-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+30-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:7:94-128
+31        android:label="login_signup"
+31-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:7:65-93
+32        android:supportsRtl="true" >
+32-->[com.facebook.android:facebook-login:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/ae0815fa26a5df699a4a99227719f9e1/jetified-facebook-login-5.5.1/AndroidManifest.xml:28:18-44
+33        <activity
+33-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:8:5-24:16
+34            android:name="dot.studios.login_signup.MainActivity"
+34-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:8:15-43
+35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+35-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:8:110-260
+36            android:hardwareAccelerated="true"
+36-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:8:261-295
+37            android:launchMode="singleTop"
+37-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:8:44-74
+38            android:theme="@style/LaunchTheme"
+38-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:8:75-109
+39            android:windowSoftInputMode="adjustResize" >
+39-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:8:296-338
+40
+41            <!--
+42           Specifies an Android theme to apply to this Activity as soon as
+43                 the Android process has started. This theme is visible to the user
+44                 while the Flutter UI initializes. After that, this theme continues
+45                 to determine the Window background behind the Flutter UI.
+46            -->
+47            <meta-data
+47-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:13:7-114
+48                android:name="io.flutter.embedding.android.NormalTheme"
+48-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:13:18-73
+49                android:resource="@style/NormalTheme" />
+49-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:13:74-111
+50            <!--
+51           Displays an Android View that continues showing the launch screen
+52                 Drawable until Flutter paints its first frame, then this splash
+53                 screen fades out. A splash screen is useful to avoid any visual
+54                 gap between the end of Android's launch screen and the painting of
+55                 Flutter's first frame.
+56            -->
+57            <meta-data
+57-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:19:7-132
+58                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+58-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:19:18-82
+59                android:resource="@drawable/launch_background" />
+59-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:19:83-129
+60
+61            <intent-filter>
+61-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:20:7-23:23
+62                <action android:name="android.intent.action.MAIN" />
+62-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:21:9-60
+62-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:21:17-58
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:22:9-68
+64-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:22:19-66
+65            </intent-filter>
+66        </activity>
+67
+68        <meta-data
+68-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:25:5-103
+69            android:name="com.facebook.sdk.ApplicationId"
+69-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:25:16-61
+70            android:value="@string/facebook_app_id" />
+70-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:25:62-101
+71
+72        <activity
+72-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:27:5-28:114
+73            android:name="com.facebook.FacebookActivity"
+73-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:27:15-59
+74            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+74-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:27:60-160
+75            android:label="@string/app_name"
+75-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:28:79-111
+76            android:theme="@style/com_facebook_activity_theme" />
+76-->[com.facebook.android:facebook-common:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/804b40fb43e3b649077ec51f3f1072cb/jetified-facebook-common-5.5.1/AndroidManifest.xml:32:13-63
+77        <activity
+77-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:29:5-36:16
+78            android:name="com.facebook.CustomTabActivity"
+78-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:29:15-60
+79            android:exported="true" >
+79-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:29:61-84
+80            <intent-filter>
+80-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:30:7-35:23
+81                <action android:name="android.intent.action.VIEW" />
+81-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:31:9-61
+81-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:31:17-58
+82
+83                <category android:name="android.intent.category.DEFAULT" />
+83-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:32:9-68
+83-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:32:19-65
+84                <category android:name="android.intent.category.BROWSABLE" />
+84-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:33:9-70
+84-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:33:19-67
+85
+86                <data android:scheme="@string/fb_login_protocol_scheme" />
+86-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:34:9-67
+86-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:34:15-64
+87            </intent-filter>
+88        </activity>
+89
+90        <!--
+91         Don't delete the meta-data below.
+92             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+93        -->
+94        <meta-data
+94-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:40:5-68
+95            android:name="flutterEmbedding"
+95-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:40:16-47
+96            android:value="2" />
+96-->/home/sifrant/BHARAT/Github Projects/flutter/login_signup/android/app/src/main/AndroidManifest.xml:40:48-65
+97
+98        <service
+98-->[:firebase_auth] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+99            android:name="com.google.firebase.components.ComponentDiscoveryService"
+99-->[:firebase_auth] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+100            android:directBootAware="true"
+100-->[com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+101            android:exported="false" >
+101-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
+102            <meta-data
+102-->[:firebase_auth] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+103                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
+103-->[:firebase_auth] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[:firebase_auth] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+105            <meta-data
+105-->[:firebase_core] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+106                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
+106-->[:firebase_core] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[:firebase_core] /home/sifrant/BHARAT/Github Projects/flutter/login_signup/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+108            <meta-data
+108-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
+109                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+109-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
+111            <meta-data
+111-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/ca912bff2260618b5b638fe661521702/play-services-measurement-api-17.2.2/AndroidManifest.xml:30:13-32:85
+112                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+112-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/ca912bff2260618b5b638fe661521702/play-services-measurement-api-17.2.2/AndroidManifest.xml:31:17-139
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/ca912bff2260618b5b638fe661521702/play-services-measurement-api-17.2.2/AndroidManifest.xml:32:17-82
+114            <meta-data
+114-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
+115                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+115-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
+117        </service>
+118
+119        <activity
+119-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
+120            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+120-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
+121            android:excludeFromRecents="true"
+121-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
+122            android:exported="true"
+122-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
+123            android:launchMode="singleTask"
+123-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
+124            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+124-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
+125            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+125-->[com.google.firebase:firebase-auth:19.2.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a83bb62cb43b672cf00b874e0ee6110c/firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
+126
+127        <receiver
+127-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:29:9-33:20
+128            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+128-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:30:13-85
+129            android:enabled="true"
+129-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:31:13-35
+130            android:exported="false" >
+130-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:32:13-37
+131        </receiver>
+132        <receiver
+132-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:34:9-42:20
+133            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+133-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:35:13-100
+134            android:enabled="true"
+134-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:36:13-35
+135            android:exported="true"
+135-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:37:13-36
+136            android:permission="android.permission.INSTALL_PACKAGES" >
+136-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:38:13-69
+137            <intent-filter>
+137-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:39:13-41:29
+138                <action android:name="com.android.vending.INSTALL_REFERRER" />
+138-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:40:17-79
+138-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:40:25-76
+139            </intent-filter>
+140        </receiver>
+141
+142        <service
+142-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:44:9-47:40
+143            android:name="com.google.android.gms.measurement.AppMeasurementService"
+143-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:45:13-84
+144            android:enabled="true"
+144-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:46:13-35
+145            android:exported="false" />
+145-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:47:13-37
+146        <service
+146-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:48:9-52:72
+147            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+147-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:49:13-87
+148            android:enabled="true"
+148-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:50:13-35
+149            android:exported="false"
+149-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:51:13-37
+150            android:permission="android.permission.BIND_JOB_SERVICE" />
+150-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:52:13-69
+151
+152        <receiver
+152-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
+153            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+153-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
 154            android:exported="true"
-154-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
-155            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-155-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
-156
-157        <activity
-157-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-158            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-158-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
-159            android:exported="false"
-159-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-160            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-160-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
-161
-162        <meta-data
-162-->[com.google.android.gms:play-services-basement:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/63e3fcc1572ce4b061750a99c390b54d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-163            android:name="com.google.android.gms.version"
-163-->[com.google.android.gms:play-services-basement:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/63e3fcc1572ce4b061750a99c390b54d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-164            android:value="@integer/google_play_services_version" />
-164-->[com.google.android.gms:play-services-basement:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/63e3fcc1572ce4b061750a99c390b54d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-165    </application>
+154-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
+155            android:permission="com.google.android.c2dm.permission.SEND" >
+155-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
+156            <intent-filter>
+156-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
+157                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+157-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:42:17-81
+157-->[com.google.firebase:firebase-iid:20.0.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:42:25-78
+158            </intent-filter>
+159        </receiver>
+160
+161        <provider
+161-->[com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+162            android:name="com.google.firebase.provider.FirebaseInitProvider"
+162-->[com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+163            android:authorities="dot.studios.login_signup.firebaseinitprovider"
+163-->[com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+164            android:exported="false"
+164-->[com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+165            android:initOrder="100" />
+165-->[com.google.firebase:firebase-common:19.3.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/fa90da68b44b4a4034a00d10f96260bc/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
 166
-167</manifest>
+167        <activity
+167-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+168            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+168-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+169            android:excludeFromRecents="true"
+169-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+170            android:exported="false"
+170-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+171            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+171-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+172        <!--
+173            Service handling Google Sign-In user revocation. For apps that do not integrate with
+174            Google Sign-In, this service will never be started.
+175        -->
+176        <service
+176-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+177            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+177-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+178            android:exported="true"
+178-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+179            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+179-->[com.google.android.gms:play-services-auth:16.0.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/22b405f854a90028a0c54bc793c5a251/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+180
+181        <activity
+181-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+182            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+182-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+183            android:exported="false"
+183-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+184            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+184-->[com.google.android.gms:play-services-base:17.1.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/6eb14f512292913515d869914807ad40/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+185
+186        <meta-data
+186-->[com.google.android.gms:play-services-basement:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/63e3fcc1572ce4b061750a99c390b54d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+187            android:name="com.google.android.gms.version"
+187-->[com.google.android.gms:play-services-basement:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/63e3fcc1572ce4b061750a99c390b54d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+188            android:value="@integer/google_play_services_version" />
+188-->[com.google.android.gms:play-services-basement:17.0.0] /home/sifrant/.gradle/caches/transforms-2/files-2.1/63e3fcc1572ce4b061750a99c390b54d/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+189
+190        <activity android:name="com.facebook.CustomTabMainActivity" />
+190-->[com.facebook.android:facebook-common:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/804b40fb43e3b649077ec51f3f1072cb/jetified-facebook-common-5.5.1/AndroidManifest.xml:33:9-71
+190-->[com.facebook.android:facebook-common:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/804b40fb43e3b649077ec51f3f1072cb/jetified-facebook-common-5.5.1/AndroidManifest.xml:33:19-68
+191        <!--
+192         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+193         with the application context. This config is merged in with the host app's manifest,
+194         but there can only be one provider with the same authority activated at any given
+195         point; so if the end user has two or more different apps that use Facebook SDK, only the
+196         first one will be able to use the provider. To work around this problem, we use the
+197         following placeholder in the authority to identify each host application as if it was
+198         a completely different provider.
+199        -->
+200        <provider
+200-->[com.facebook.android:facebook-core:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/cfae8479aa7534c17cc770d530755599/jetified-facebook-core-5.5.1/AndroidManifest.xml:39:9-42:40
+201            android:name="com.facebook.internal.FacebookInitProvider"
+201-->[com.facebook.android:facebook-core:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/cfae8479aa7534c17cc770d530755599/jetified-facebook-core-5.5.1/AndroidManifest.xml:40:13-70
+202            android:authorities="dot.studios.login_signup.FacebookInitProvider"
+202-->[com.facebook.android:facebook-core:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/cfae8479aa7534c17cc770d530755599/jetified-facebook-core-5.5.1/AndroidManifest.xml:41:13-72
+203            android:exported="false" />
+203-->[com.facebook.android:facebook-core:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/cfae8479aa7534c17cc770d530755599/jetified-facebook-core-5.5.1/AndroidManifest.xml:42:13-37
+204
+205        <receiver
+205-->[com.facebook.android:facebook-core:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/cfae8479aa7534c17cc770d530755599/jetified-facebook-core-5.5.1/AndroidManifest.xml:44:9-50:20
+206            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+206-->[com.facebook.android:facebook-core:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/cfae8479aa7534c17cc770d530755599/jetified-facebook-core-5.5.1/AndroidManifest.xml:45:13-86
+207            android:exported="false" >
+207-->[com.facebook.android:facebook-core:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/cfae8479aa7534c17cc770d530755599/jetified-facebook-core-5.5.1/AndroidManifest.xml:46:13-37
+208            <intent-filter>
+208-->[com.facebook.android:facebook-core:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/cfae8479aa7534c17cc770d530755599/jetified-facebook-core-5.5.1/AndroidManifest.xml:47:13-49:29
+209                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+209-->[com.facebook.android:facebook-core:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/cfae8479aa7534c17cc770d530755599/jetified-facebook-core-5.5.1/AndroidManifest.xml:48:17-95
+209-->[com.facebook.android:facebook-core:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/cfae8479aa7534c17cc770d530755599/jetified-facebook-core-5.5.1/AndroidManifest.xml:48:25-92
+210            </intent-filter>
+211        </receiver>
+212        <receiver
+212-->[com.facebook.android:facebook-core:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/cfae8479aa7534c17cc770d530755599/jetified-facebook-core-5.5.1/AndroidManifest.xml:51:9-58:20
+213            android:name="com.facebook.CampaignTrackingReceiver"
+213-->[com.facebook.android:facebook-core:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/cfae8479aa7534c17cc770d530755599/jetified-facebook-core-5.5.1/AndroidManifest.xml:52:13-65
+214            android:exported="true"
+214-->[com.facebook.android:facebook-core:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/cfae8479aa7534c17cc770d530755599/jetified-facebook-core-5.5.1/AndroidManifest.xml:53:13-36
+215            android:permission="android.permission.INSTALL_PACKAGES" >
+215-->[com.facebook.android:facebook-core:5.5.1] /home/sifrant/.gradle/caches/transforms-2/files-2.1/cfae8479aa7534c17cc770d530755599/jetified-facebook-core-5.5.1/AndroidManifest.xml:54:13-69
+216            <intent-filter>
+216-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:39:13-41:29
+217                <action android:name="com.android.vending.INSTALL_REFERRER" />
+217-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:40:17-79
+217-->[com.google.android.gms:play-services-measurement:17.2.2] /home/sifrant/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:40:25-76
+218            </intent-filter>
+219        </receiver>
+220    </application>
+221
+222</manifest>

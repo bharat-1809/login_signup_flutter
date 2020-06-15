@@ -26,7 +26,8 @@ class _SecondScreenState extends State<SecondScreen> {
     updateUser().then((value) {
       setState(() {
         _name = value.displayName;
-        _photoUrl = value.photoUrl;
+        _photoUrl = value.photoUrl ??
+            'https://res.cloudinary.com/dtbudl0yx/image/fetch/w_2000,f_auto,q_auto,c_fit/https://adamtheautomator.com/content/images/size/w2000/2019/10/user-1633249_1280.png';
         _currentUser = value;
       });
     });
@@ -47,7 +48,9 @@ class _SecondScreenState extends State<SecondScreen> {
           IconButton(
             icon: Icon(Icons.all_out),
             onPressed: () async {
-              await FirebaseAuth.instance.signOut();
+              await _loginProvider.googleLogout();
+              await _loginProvider.facebookLogout();
+              await _loginProvider.firebaseLogout();
               Navigator.of(context).pop();
             },
           ),
@@ -59,7 +62,7 @@ class _SecondScreenState extends State<SecondScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 90,
+                radius: 40,
                 backgroundImage: NetworkImage(_photoUrl),
               ),
               SizedBox(height: 50),

@@ -1,4 +1,4 @@
-package com.example.login_signup
+package dot.studios.login_signup
 
 import io.flutter.embedding.android.FlutterActivity
 
