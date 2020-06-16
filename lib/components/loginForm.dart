@@ -147,7 +147,10 @@ class _LoginFormState extends State<LoginForm> {
                   icon: 'assets/github.png',
                 ),
                 SocialConnectButton(
-                  onPressed: () {},
+                  onPressed: () async {
+                    FirebaseUser user = await _loginProvider.signInWithPhone(phoneNumber: '+917905309886');
+                    // print(user.phoneNumber);
+                  },
                   icon: 'assets/microsoft.png',
                 ),
               ],

@@ -68,4 +68,15 @@ class LoginProvider {
   Future<void> facebookLogout() async {
     await _facebookSignIn.logOut();
   }
+
+  Future<FirebaseUser> signInWithPhone({String phoneNumber}) async {
+    await _firebaseAuth.verifyPhoneNumber(phoneNumber: phoneNumber, timeout: Duration(minutes: 2), verificationCompleted: (credential) async {
+     AuthResult result = await _firebaseAuth.signInWithCredential(credential);
+     FirebaseUser user = result.user;
+     return user; 
+    }, verificationFailed: (exception) {
+      print(exception.message);
+      print(exception.code);
+    }, codeSent: (String token, [int num]) {}, codeAutoRetrievalTimeout: (String input) {print('TimeOut'); print(input);});    
+  }
 }
