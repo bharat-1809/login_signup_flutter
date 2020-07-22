@@ -5,7 +5,7 @@
 
 ### SignIn Providers
 
-- [x] Email/Password <img src="https://www.gstatic.com/mobilesdk/160409_mobilesdk/images/auth_service_email.svg" height="20" width="20"> 
+- [x] Email/Password <img src="https://www.gstatic.com/mobilesdk/160409_mobilesdk/images/auth_service_email.svg" height="20" width="20">
 - [ ] Phone <img src="https://www.gstatic.com/mobilesdk/170501_mobilesdk/auth_service_phone.svg" height="20" width="20">
 - [x] Google <img src="https://www.gstatic.com/mobilesdk/160512_mobilesdk/auth_service_google.svg" height="20" width="20">
 - [ ] Play Games <img src="https://www.gstatic.com/mobilesdk/171005_mobilesdk/auth_service_play_games.svg" height="20" width="20">
