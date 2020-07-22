@@ -3,6 +3,8 @@
 
 # Login flow in Flutter using Firebase
 
+<img src="https://github.com/bharat-1809/login_signup_flutter/blob/master/logSup.jpg">
+
 ### SignIn Providers
 
 - [x] Email/Password <img src="https://www.gstatic.com/mobilesdk/160409_mobilesdk/images/auth_service_email.svg" height="20" width="20">
