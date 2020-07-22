@@ -3,7 +3,7 @@
 
 # Login flow in Flutter using Firebase
 
-<img src="https://github.com/bharat-1809/login_signup_flutter/blob/master/logSup.jpg" width="120">
+<img src="https://github.com/bharat-1809/login_signup_flutter/blob/master/logSup.jpg" width="250">
 
 ### SignIn Providers
 
