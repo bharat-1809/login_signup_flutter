@@ -19,6 +19,7 @@ dependencies:
   firebase_core: ^0.4.5
   google_sign_in: ^4.5.1
   flutter_facebook_login: ^3.0.0
+  flare_flutter: ^2.0.3
 
 dev_dependencies:
   flutter_test:
